@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let conversation = [];
 
     // Replace 'YOUR_OPENAI_API_KEY' with your actual API key
-    const apiKey = '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';
+    const apiKey = 'xxxx';
     
     sendButton.addEventListener("click", sendMessage);
 
