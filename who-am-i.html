@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Welcome to my website</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: black;
+        }
+
+        .header {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            color: gold;
+        }
+
+        .separator {
+            height: 2px;
+            background-color: gold;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        /* About Me Section */
+        .about-me-container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%; 
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .about-me-left {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .about-me-right {
+            flex: 1;
+            
+        }
+
+        .technology-stack {
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        color: gold;
+        }
+
+        .technology {
+        font-size: 44px;
+        margin: 20px;
+        opacity: 0;
+        animation: fall 2s ease forwards; 
+        }
+
+        .technology:nth-child(1) {
+        animation-delay: 0.5s; 
+        }
+
+        .technology:nth-child(2) {
+        animation-delay: 1s; 
+        }
+
+        .technology:nth-child(3) {
+        animation-delay: 1.5s; 
+        }
+        .technology:nth-child(4) {
+        animation-delay: 0.5s;
+        }
+
+        .technology:nth-child(5) {
+        animation-delay: 1s; 
+        }
+
+        .technology:nth-child(6) {
+        animation-delay: 1.5s; 
+        }
+
+        .technology:nth-child(7) {
+        animation-delay: 1.5s; 
+        }
+
+
+        @keyframes fall {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="regular-navbar">
+      <header id="navbar" class="py-4 px-2 landing-navbar">
+          <div class="container mx-auto flex items-center justify-between">
+              <a href="index.html">
+                  <img
+                      src="images/odoublek-logo.png"
+                      alt="Company Logo"
+                      class="h-20 md:h-18 mr-3"
+                  />
+              </a>
+              <nav>
+                  <ul class="flex space-x-4">
+                      <li>
+                          <a href="who-am-i.html" class="button-link hover:text-gray-300"
+                              >Who Am I?</a
+                          >
+                      </li>
+                      <li>
+                          <a href="what-we-do.html" class="button-link hover:text-gray-300"
+                              >Skills</a
+                          >
+                      </li>
+                      <li>
+                          <a href="about-us.html" class="button-link hover:text-gray-300"
+                              >Projects</a
+                          >
+                      </li>
+                      <li>
+                        <a href="about-us.html" class="button-link hover:text-gray-300"
+                            >Contact</a
+                        >
+                    </li>
+                  </ul>
+              </nav>
+              <div class="navbar-icons">
+                    <a href="#" class="social-link" target="_blank">
+                      <i class="fab fa-linkedin" ></i> 
+                  </a>
+                  <a href="#" class="social-link" target="_blank">
+                      <i class="fab fa-github"></i> 
+                  <a href="mailto:kayaozgurkaan@gmail.com" class="social-link">
+                      <i class="fas fa-envelope"></i> 
+                      kayaozgurkaan@gmail.com
+                  </a>
+              </div>
+          </div>
+      </header>
+    </div>
+
+    
+
+    <div class="header">
+        <h1 style="font-family: Inter;">Who Am I?</h1>
+        <div class="separator"></div>
+    </div>
+
+    <!-- About Me -->
+    <section id="about-me" class="py-16">
+        <div class="container mx-auto px-4 about-me-container">
+            <div class="about-me-left">
+                <p class="section-description" style="color: gold; font-family: Inter;" >
+                    I'm Ozgur Kaan Kaya, a junior software engineer with a strong focus on Python and frontend development. My passion is bringing ideas to life through personal projects, scripting, minigames, web scraping, and data analysis. I have a background in professional basketball, having played on youth teams, and I'm also a fan of snowboarding and soccer. As a problem solver, I approach challenges with an open mind and a solution-oriented mindset. You can explore my portfolio on GitHub. Currently, I'm thriving as a freelance web developer, crafting user-friendly, good-looking, and fully responsive websites using HTML, CSS (Tailwind), and JavaScript. Additionally, I also have experience with React and some other frameworks. If you're interested in discussing potential collaborations or any recruitment-related situations, don't hesitate to reach out! Thank you for visiting my website.                </p>
+            </div>
+            <div class="about-me-right">
+                <div class="photo-gallery">
+                    <img id="gallery-image" src="images/ozgur-normal2.jpg" alt="Gallery Image" style="margin-left:10rem; max-width: 80%; max-height: 60%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="technology-stack">
+        <div class="technology"><i class="fab fa-python" title="Python"></i></div>
+        <div class="technology"><i class="fab fa-react" title="React"></i></div>
+        <div class="technology"><i class="fab fa-html5" title="HTML5"></i></div>
+        <div class="technology"><i class="fab fa-css3-alt" title="CSS3"></i></div>
+        <div class="technology"><i class="fas fa-database" title="Database"></i></div>
+        <div class="technology"><i class="fab fa-git" title="Git"></i></div>
+        <div class="technology"><i class="fab fa-windows" title="Windows"></i></div>
+      </div>
+
+    <script>
+window.addEventListener("load", () => {
+  const technologies = document.querySelectorAll(".technology");
+
+  technologies.forEach((tech, index) => {
+    setTimeout(() => {
+      tech.style.animationDelay = `${index * 0.5}s`;
+      tech.style.animationPlayState = "running";
+    }, 500);
+  });
+});
+
+const imageUrls = [
+        'images/ozgur-sno.jpg',
+        'images/ozgur-snowboard.jpg',
+        'images/ozgur-normal2.jpg',
+        'images/ozgur-normal.jpg',
+    ];
+
+    let currentImageIndex = 0;
+    const galleryImage = document.getElementById('gallery-image');
+
+    function changeGalleryImage() {
+        galleryImage.src = imageUrls[currentImageIndex];
+        currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+    }
+
+
+    setInterval(changeGalleryImage, 3000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

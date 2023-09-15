@@ -1,0 +1,79 @@
+    <!-- Navbar -->
+    <div id="regular-navbar">
+      <header id="navbar" class="py-4 px-2 landing-navbar">
+          <div class="container mx-auto flex items-center justify-between">
+              <a href="index.html">
+                  <img
+                      src="images/odoublek-logo.png"
+                      alt="Company Logo"
+                      class="h-20 md:h-18 mr-3"
+                  />
+              </a>
+              <nav>
+                  <ul class="flex space-x-4">
+                      <li>
+                          <a href="who-am-i.html" class="button-link hover:text-gray-300"
+                              >Who Am I?</a
+                          >
+                      </li>
+                      <li>
+                          <a href="what-we-do.html" class="button-link hover:text-gray-300"
+                              >Skills</a
+                          >
+                      </li>
+                      <li>
+                          <a href="projects.html" class="button-link hover:text-gray-300"
+                              >Projects</a
+                          >
+                      </li>
+                      <li>
+                        <a href="about-us.html" class="button-link hover:text-gray-300"
+                            >Contact</a
+                        >
+                    </li>
+                  </ul>
+              </nav>
+              <div class="navbar-icons">
+                    <a href="#" class="social-link" target="_blank">
+                      <i class="fab fa-linkedin" ></i> 
+                  </a>
+                  <a href="#" class="social-link" target="_blank">
+                      <i class="fab fa-github"></i> 
+                  <a href="mailto:kayaozgurkaan@gmail.com" class="social-link">
+                      <i class="fas fa-envelope"></i> 
+                      kayaozgurkaan@gmail.com
+                  </a>
+              </div>
+          </div>
+      </header>
+    </div>
+
+    <!-- Hero section -->
+    <div id="particles-js"></div>
+    <div id="text-container">
+      <h1 class="text-effect" style="font-style:italic; font-family: Inter;"> Welcome to my Website, I'm Ozgur. Freelance Web developer</h1>
+      <button id="talk-button" class="interactive-button">Talk with Jr. Ozgur</button>
+      <button href="contact.html" id="hire-button" class="interactive-button">Download Resume</button>
+      <button href="contact.html" id="hire-button" class="interactive-button">You're bored?</button>
+    </div>
+
+    <!-- Chatbot -->
+    <section id="chat-section" class="py-16 h-screen">
+        <div class="container mx-auto px-4">
+            <div class="chat-container" id="chat-container">
+                <div class="chat-log" id="chat-log">
+                    <div class="chat-box" id="chat-box" style="display: none;">
+                        <div class="chat-messages" id="chat-messages"></div>
+                        <div class="chat-input">
+                            <input type="text" id="user-input" placeholder="Type your message...">
+                            <button id="send-button">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <button id="ama-button" class="interactive-button">AMA (Literally anything)</button>
+                    <button id="ozgur-button" class="interactive-button">Who Is Ozgur Kaya?</button>
+                </div>
+            </div>
+        </div>
+    </section>
